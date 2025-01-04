@@ -1,0 +1,281 @@
+*
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000000;
+  }
+  
+  .logo img {
+    height: 100px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin-right: 10px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #4138ba;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /*BANNER*/
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+  }
+  
+  .slide-content h2 {
+    font-size: 24px;
+  }
+  
+  .slide-content p {
+    font-size: 16px;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  /*FILTRO Y CATEGORIAS*/
+  .filter-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .filter-section, .category-section {
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .category {
+    cursor: pointer;
+  }
+  
+  .category:hover {
+    font-weight: bold;
+  }
+  /*LISTADO DE PRODUCTOS*/
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .product {
+    background-color: #736d8da5;
+    padding: 20px;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-rating {
+    display: inline-block;
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    padding: 2px 5px;
+    border-radius: 2px;
+  }
+  
+  .product-actions {
+    margin-top: 10px;
+  }
+  
+  .add-to-cart, .view-details {
+    padding: 5px 10px;
+    background-color: #4138ba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .add-to-cart:hover, .view-details:hover {
+    background-color: #8a87be;
+  }
+    /*LISTADO DE PRODUCTOS*/
+    .cart {
+      width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+    
+    .cart h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    
+    .cart-item {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    
+    .item-image {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    
+    .item-details {
+      flex-grow: 1;
+    }
+    
+    .item-name {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    
+    .item-price {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .item-quantity {
+      width: 50px;
+    }
+    
+    .item-remove {
+      padding: 5px 10px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .cart-summary {
+      margin-top: 20px;
+    }
+    
+    #proceed-to-payment {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    #proceed-to-payment:hover {
+      background-color: #2980b9;
+    }
+    /*PIE DE PAGINA*/
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer-links ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .footer-links ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .footer-links ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .contact-info {
+      margin-top: 10px;
+    }
+    
+    .contact-info p {
+      margin: 5px 0;
+    }
+    
+    .footer .copyright {
+      margin-top: 20px;
+      font-size: 12px;
+    }

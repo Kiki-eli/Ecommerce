@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hombre fashion</title>
+  <link rel="stylesheet" type="text/css" href="ecommerce.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logoHombre fashion.png" alt="Logo de la marca">
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">Camisas</a></li>
+        <li><a href="#">Pantalones</a></li>
+        <li><a href="#">Chaquetas</a></li>
+        <li><a href="#">Calzado</a></li>
+        <li><a href="#">Accesorios</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Buscar productos">
+      <button id="search-button">Buscar</button>
+    </div>
+  </header>
+ <!--BANNER-->
+  <div class="slider">
+    <div class="slide">
+      <img src="prenda1.png" alt="Hombre con prenda 1">
+      <div class="slide-content">
+        <h2>Camisa de vestir clásica</h2>
+        <p>Esta camisa de vestir blanca es un elemento básico en el guardarropa masculino. Está confeccionada en algodón de alta calidad y presenta un corte ajustado y elegante.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="prenda2.png" alt="Hombre con prenda 2">
+      <div class="slide-content">
+        <h2>Traje de tweed</h2>
+        <p>Este traje de tweed es una opción sofisticada y con estilo para ocasiones especiales.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="prenda3.png" alt="Hombre con prenda 3">
+      <div class="slide-content">
+        <h2>Camiseta de manga larga casual</h2>
+        <p>Esta camiseta de manga larga es perfecta para un estilo casual y relajado. Está confeccionada en algodón suave y presenta un ajuste cómodo.</p>
+      </div>
+    </div>
+  </div>
+<!--FILTRO Y CATEGORIAS-->
+<div class="filter-container">
+  <h2>Filtros y Categorías</h2>
+  
+  <div class="filter-section">
+    <h3>Tipo de prenda</h3>
+    <select id="prenda-filter">
+      <option value="">Todos</option>
+      <option value="camisas">Camisas</option>
+      <option value="pantalones">Pantalones</option>
+      <option value="chaquetas">Chaquetas</option>
+    </select>
+  </div>
+  
+  <div class="filter-section">
+    <h3>Estilo</h3>
+    <select id="estilo-filter">
+      <option value="">Todos</option>
+      <option value="formal">Formal</option>
+      <option value="casual">Casual</option>
+      <option value="deportivo">Deportivo</option>
+    </select>
+  </div>
+  
+  <!-- Agrega más secciones de filtros aquí (talla, color, precio, etc.) -->
+  
+  <div class="category-section">
+    <h3>Categorías</h3>
+    <ul id="categories-list">
+      <li class="category">Ropa formal</li>
+      <li class="category">Ropa casual</li>
+      <li class="category">Ropa deportiva</li>
+      <li class="category">Trajes</li>
+      <li class="category">Camisas de vestir</li>
+      <li class="category">Jeans</li>
+    </ul>
+  </div>
+</div>
+<!--LISTADOS DE PRODUCTOS-->
+<div class="product-list">
+  <div class="product">
+    <img src="producto1.jpg" alt="Producto 1" class="product-image">
+    <h3 class="product-name">Producto 1</h3>
+    <p class="product-price">$19.99</p>
+    <div class="product-rating">4.5</div>
+    <div class="product-actions">
+      <button class="add-to-cart">Agregar al carrito</button>
+      <button class="view-details">Ver detalles</button>
+    </div>
+  </div>
+  
+  <div class="product">
+    <img src="producto2.jpg" alt="Producto 2" class="product-image">
+    <h3 class="product-name">Producto 2</h3>
+    <p class="product-price">$29.99</p>
+    <div class="product-rating">3.8</div>
+    <div class="product-actions">
+      <button class="add-to-cart">Agregar al carrito</button>
+      <button class="view-details">Ver detalles</button>
+    </div>
+
+  </div>
+  
+  <!-- Agrega más productos aquí -->
+  <div class="product">
+    <img src="producto3.jpg" alt="Producto 2" class="product-image">
+    <h3 class="product-name">Producto 3</h3>
+    <p class="product-price">$29.99</p>
+    <div class="product-rating">4.8</div>
+    <div class="product-actions">
+      <button class="add-to-cart">Agregar al carrito</button>
+      <button class="view-details">Ver detalles</button>
+    </div>
+</div>
+<!-- CARRITO DE COMPRAS -->
+<div class="cart">
+  <h2>Carrito de Compras</h2>
+  
+  <div class="cart-items">
+    <div class="cart-item">
+      <img src="imagen1.jpg" alt="Producto 1" class="item-image">
+      <div class="item-details">
+        <h3 class="item-name">Producto 1</h3>
+        <p class="item-price">$19.99</p>
+        <input type="number" class="item-quantity" value="1">
+        <button class="item-remove">Eliminar</button>
+      </div>
+    </div>
+    
+    <div class="cart-item">
+      <img src="imagen2.jpg" alt="Producto 2" class="item-image">
+      <div class="item-details">
+        <h3 class="item-name">Producto 2</h3>
+        <p class="item-price">$29.99</p>
+        <input type="number" class="item-quantity" value="2">
+        <button class="item-remove">Eliminar</button>
+      </div>
+    </div>
+    
+    <!-- Agrega más productos aquí -->
+  </div>
+  
+  <div class="cart-summary">
+    <h3>Resumen del Carrito</h3>
+    <p>Total de productos: <span id="total-items">3</span></p>
+    <p>Total a pagar: <span id="total-price">$79.97</span></p>
+    <button id="proceed-to-payment">Proceder al Pago</button>
+  </div>
+</div>
+ <script src="ecommerce.js"></script>
+</body>
+ <!-- PIE DE PAGINA -->
+ 
+</html>
